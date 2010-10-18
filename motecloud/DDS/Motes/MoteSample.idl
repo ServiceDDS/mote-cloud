@@ -1,0 +1,11 @@
+module MoteSample {
+
+    struct SampleTopic {
+        long moteID;         	   	   // source of message
+	  long sample;			   // sample number
+	  string variableName;		   // variable sampled name
+        string data;       	   	   // data sampled
+    };
+#pragma keylist SampleTopic moteID
+
+};
