@@ -10,9 +10,6 @@ import ServiceDDS.Peer;
 import ServiceDDS.exception.ImpossibleToCreateDDSDomainParticipant;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import remote_alert_sender.RemoteAlertSender;
-import virtual_control_room.alarms.Alarm;
-import virtual_control_room.alarms.AlarmList;
 import virtual_control_room.exceptions.VCRExceptionUnnableToConnectToHabitatLAN;
 
 /**
@@ -23,21 +20,14 @@ public class VCR {
 
     GUI gui;
     Beholder beholder;
-    AlarmList alarmList;
+
 //    SampleIndex sampleList; // We store samples, but it seems useless in the current application...
-    RemoteAlertSender ras;
     Peer myPeer;
     private boolean connectedToHabitat = false;
 
     public VCR(GUI gui) {
         this.gui = gui;
-        this.alarmList = new AlarmList();
 //        this.sampleList = new SampleIndex();
-        this.ras = new RemoteAlertSender(); // PROVISIONAL?? When using service DDS (DDS decouples system architecture)
-    }
-
-    public void newAlarm(Alarm a) {
-        alarmList.addAlarm(a);
     }
 
 //    public void newValues(SampleSet vs) {

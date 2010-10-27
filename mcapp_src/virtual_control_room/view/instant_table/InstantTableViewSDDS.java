@@ -19,7 +19,6 @@ import ServiceDDS.servicetopic.ServiceTopic;
 import ServiceDDS.servicetopic.ServiceTopicListener;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import remote_alert_sender.Beholder;
 import samples.DoubleSample;
 import samples.Sample;
 
@@ -47,11 +46,11 @@ public class InstantTableViewSDDS extends InstantTableView implements
         } catch (ImpossibleToCreateDDSTopic ex) {
             Logger.getLogger(InstantTableViewSDDS.class.getName()).log(Level.SEVERE, null, ex);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(Beholder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(InstantTableViewSDDS.class.getName()).log(Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            Logger.getLogger(Beholder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(InstantTableViewSDDS.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            Logger.getLogger(Beholder.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(InstantTableViewSDDS.class.getName()).log(Level.SEVERE, null, ex);
         }
 
     }
