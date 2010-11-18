@@ -33,15 +33,17 @@ public class Beholder implements ServiceTopicListener {
         this.participantsView = new ParticipantMotesJFrame();
 
         try {
-            QoSParameters params = new QoSParameters();
-            params.setDeadline(30, 0);
-            params.setHistory(QoSParameters.KEEP_LAST_HISTORY_QOS, 3);
+            System.out.println("Beholder.ServiceTopic trying...");
+//            QoSParameters params = new QoSParameters();
+//            params.setDeadline(30, 0);
+//            params.setHistory(QoSParameters.KEEP_LAST_HISTORY_QOS, 3);
             this.moteServiceTopic =
                     vcr.myPeer.newReaderServiceTopic(
                         new SampleTopic(),
                         "SampleTopic",
-                        params
+                        null//  params
                     );
+            System.out.println("Beholder.ServiceTopic done");
             this.moteServiceTopic.addListener(this);
         } catch (ImpossibleToCreateDDSTopic ex) {
             Logger.getLogger(Beholder.class.getName()).log(Level.SEVERE, null, ex);
