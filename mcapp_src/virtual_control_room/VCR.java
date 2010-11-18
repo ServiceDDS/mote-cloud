@@ -54,8 +54,11 @@ public class VCR {
         this.connectedToHabitat = true;
         try {
             this.myPeer = new Peer("VCR");
+            System.out.println("VCR.Peer done");
             this.myPeer.joinGroup(new Group("MoteCloud"));
+            System.out.println("VCR.Group done");
             this.beholder = new Beholder(this);
+            System.out.println("VCR.Beholder done");
         } catch (ImpossibleToCreateDDSDomainParticipant ex) {
             Logger.getLogger(VCR.class.getName()).log(Level.SEVERE, null, ex);
         }
