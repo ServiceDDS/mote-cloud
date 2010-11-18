@@ -26,6 +26,10 @@ public abstract class Module implements Runnable {
 	private static boolean initialized = false;
 	
 	@Override
+	/**
+	 * This task should be redefined by the module designer. This is where the data from he WSN is taken
+	 * and the new samples are written using the newSample method in the module.
+	 */
 	public abstract void run();
 
 	public void initialize() {
@@ -87,13 +91,5 @@ public abstract class Module implements Runnable {
 	 */
 	public abstract void setup(String[] args);	
 	
-	/**
-	 * This task should be redefined by the module designer. This is where the data from he WSN is taken
-	 * and the new samples are written using the newSample method in the module.
-	 */
-//	public abstract void moduleTask();
-//	{
-//		System.out.println("Module.moduleTask()");
-//	}
 	
 }
