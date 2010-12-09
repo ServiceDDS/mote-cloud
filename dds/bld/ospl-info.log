@@ -1,0 +1,516 @@
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\ospl.exe <3628>
+Thread      : 6196
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/149684053
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/515467943
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/528684375
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Could not find matching key file for uri: OpenSpliceV5.2.0
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/os_findKeyFile/code/os_sharedmem.c/223/0/529094149
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/530280133
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Could not find matching key file for uri: OpenSpliceV5.2.0
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/os_findKeyFile/code/os_sharedmem.c/223/0/530801264
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "OpenSpliceV5.2.0"
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/The OpenSplice domain service/u_kernel.c/620/0/595503249
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 18 17:36:53 2010
+Description : No configuration specified for Daemon. Therefore the default will be used: Locking disabled
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/lockPages/u_spliced.c/126/0/596397400
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Configuration> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/91/0/596780843
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Arguments> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/127/0/596975032
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/188/0/597222432
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/233/0/597401263
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/289/0/597572962
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <FailureAction> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/352/0/597770443
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Configuration> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/91/0/597988769
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Arguments> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/127/0/598160468
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/188/0/598338201
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/233/0/598507158
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/289/0/598682697
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Taking default for <FailureAction> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/352/0/598853298
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Started service durability with args "durability" "file://C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\etc\config\ospl.xml"
+Node        : jadianes-UMA
+Process     : durability <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/spliced.c/392/0/660015432
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : durability <5284>
+Thread      : 4820
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/714570149
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : durability <5284>
+Thread      : 4820
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/728527684
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : service 'durability': Locking disabled
+Node        : jadianes-UMA
+Process     : durability <5284>
+Thread      : 4820
+Internals   : V5.2.0/lockPages/u_service.c/170/0/729411961
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : Started service networking with args "networking" "file://C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\etc\config\ospl.xml"
+Node        : jadianes-UMA
+Process     : networking <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/spliced.c/392/0/747060772
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : networking <1200>
+Thread      : 6536
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/847128332
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : networking <1200>
+Thread      : 6536
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/858100060
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:53 2010
+Description : service 'networking': Locking disabled
+Node        : jadianes-UMA
+Process     : networking <1200>
+Thread      : 6536
+Internals   : V5.2.0/lockPages/u_service.c/170/0/859066072
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:36:54 2010
+Description : Durability identification is: 574277307
+Node        : jadianes-UMA
+Process     : durability <5284>
+Thread      : 4820
+Internals   : V5.2.0/DurabilityService/d_durability.c/459/0/569926114
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 18 17:37:00 2010
+Description : Persistence not enabled!
+Node        : jadianes-UMA
+Process     : durability <5284>
+Thread      : 4820
+Internals   : V5.2.0/DurabilityService/d_groupLocalListener.c/2086/0/604419503
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:12 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\ospl.exe <6904>
+Thread      : 7044
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/810747351
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:18 2010
+Description : ==============================================
+              == The service has successfully terminated. ==
+              ==============================================
+Node        : jadianes-UMA
+Process     : networking <7688>
+Thread      : 6584
+Internals   : V5.2.0/OpenSplice domain service/spliced.c/732/0/437353692
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\ospl.exe <8048>
+Thread      : 7256
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/621398802
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/739803090
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/752650341
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Could not find matching key file for uri: OpenSpliceV5.2.0
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/os_findKeyFile/code/os_sharedmem.c/223/0/753090834
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/754313024
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Could not find matching key file for uri: OpenSpliceV5.2.0
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/os_findKeyFile/code/os_sharedmem.c/223/0/754671233
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : +++++++++++++++++++++++++++++++++++++++++++
+              ++ The service has successfully started. ++
+              +++++++++++++++++++++++++++++++++++++++++++
+Storage     : 10240 Kbytes.
+Locking     : default
+Domain      : "OpenSpliceV5.2.0"
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/The OpenSplice domain service/u_kernel.c/620/0/825134184
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 18 18:03:27 2010
+Description : No configuration specified for Daemon. Therefore the default will be used: Locking disabled
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/lockPages/u_spliced.c/126/0/825794100
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Configuration> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/91/0/826124881
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Arguments> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/127/0/826385995
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Class> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/188/0/826584574
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Priority> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/233/0/826769438
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/289/0/826952657
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <FailureAction> parameter service durability
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/352/0/827136972
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Configuration> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/91/0/827357493
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Arguments> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/127/0/827558814
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Class> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/188/0/827750261
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Priority> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/233/0/827931834
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <Scheduling/Priority[@priority_kind]> parameter for  service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/289/0/828112310
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Taking default for <FailureAction> parameter service networking
+Node        : jadianes-UMA
+Process     : OpenSplice Control Service <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/sr_serviceInfo.c/352/0/828335025
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Started service durability with args "durability" "file://C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\etc\config\ospl.xml"
+Node        : jadianes-UMA
+Process     : durability <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/spliced.c/392/0/833725715
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : Started service networking with args "networking" "file://C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\etc\config\ospl.xml"
+Node        : jadianes-UMA
+Process     : networking <4476>
+Thread      : 7472
+Internals   : V5.2.0/OpenSplice domain service/spliced.c/392/0/837649557
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : durability <6400>
+Thread      : 3628
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/905018635
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : durability <6400>
+Thread      : 3628
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/924128236
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : service 'durability': Locking disabled
+Node        : jadianes-UMA
+Process     : durability <6400>
+Thread      : 3628
+Internals   : V5.2.0/lockPages/u_service.c/170/0/925058044
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : networking <6336>
+Thread      : 6240
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/918015095
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : u_usrReportPluginReadAndRegister
+
+Node        : jadianes-UMA
+Process     : networking <6336>
+Thread      : 6240
+Internals   : V5.2.0/user layer/u_usrReportPlugin.c/114/0/929267137
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:27 2010
+Description : service 'networking': Locking disabled
+Node        : jadianes-UMA
+Process     : networking <6336>
+Thread      : 6240
+Internals   : V5.2.0/lockPages/u_service.c/170/0/930155254
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 18:03:28 2010
+Description : Durability identification is: 803748063
+Node        : jadianes-UMA
+Process     : durability <6400>
+Thread      : 3628
+Internals   : V5.2.0/DurabilityService/d_durability.c/459/0/766361025
+========================================================================================
+Report      : WARNING
+Date        : Thu Nov 18 18:03:34 2010
+Description : Persistence not enabled!
+Node        : jadianes-UMA
+Process     : durability <6400>
+Thread      : 3628
+Internals   : V5.2.0/DurabilityService/d_groupLocalListener.c/2086/0/794778575
