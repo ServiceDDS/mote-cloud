@@ -1,0 +1,24 @@
+========================================================================================
+Report      : INFO
+Date        : Tue Oct 19 13:28:19 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\idlpp.exe <4420>
+Thread      : 2688
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/391011309
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:30:28 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\idlpp.exe <6468>
+Thread      : 6456
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/537051864
+========================================================================================
+Report      : INFO
+Date        : Thu Nov 18 17:31:48 2010
+Description : OS-layer initialization called 2 times
+Node        : jadianes-UMA
+Process     : C:\Program Files\PrismTech\OpenSpliceDDS\V5.2.0\HDE\x86.win32\bin\idlpp.exe <7512>
+Thread      : 7532
+Internals   : V5.2.0/os_osInit/code/os_init.c/61/1/413761948
