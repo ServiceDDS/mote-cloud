@@ -13,27 +13,24 @@ import ServiceDDS.servicetopic.ServiceTopicListener;
 
 public class NewSampleListener implements ServiceTopicListener {
 
-	int feed;
-	String APPKey;
 	Hashtable<String,VariableID> variables = new Hashtable<String,VariableID>(); 
 	
-	public NewSampleListener(int feed, String APPKey, VariableID[] vars) {
+	public NewSampleListener(VariableID[] vars) {
 		System.out.println("NewSampleListener: constructor");
 		if (vars!= null) for (int i=0; i<vars.length;i++) {
 			this.variables.put(vars[i].toString(), vars[i]);
 			System.out.println("NewSampleListener: added <"+vars[i].toString()+">");
 		}
-		this.feed = feed;
-		this.APPKey = APPKey;
 	}
 	
-	public void updateFeed(int i, double v) {
+	public void updateFeed(String ak, int f, int i, double v) {
+		System.out.println("NewSampleListener.updateFeed(): AK="+ak+" F="+f+" ST="+i+" V="+v);
 		try {
-			Pachube p = new Pachube(this.APPKey);
+			Pachube p = new Pachube(ak);
 			System.out.println("NewSampleListener.updateFeed(): got Pachube object...");
-			Feed f = p.getFeed(this.feed);
+			Feed feed = p.getFeed(f);
 			System.out.println("NewSampleListener.updateFeed(): got Feed object...");
-			f.updateDatastream(i, v);
+			feed.updateDatastream(i, v);
 			System.out.println("NewSampleListener.updateFeed(): stream updated!");
 		} catch (PachubeException e) {
 			e.printStackTrace();
@@ -50,9 +47,10 @@ public class NewSampleListener implements ServiceTopicListener {
 	            VariableID id = new VariableID(newSample.variableName,newSample.moteID,newSample.location);
 	           System.out.println("NewSampleListener.on_data_available: varID=<"+id.toString()+">");
 	            if (this.variables.containsKey(id.toString())) {
+	            	id = variables.get(id.toString());
 	            	double v = new Double(newSample.data).doubleValue();
 	            	System.out.println("NewSampleListener.on_data_available: showing sample: "+newSample.sample+" with value "+v+"...");	            	
-	            	updateFeed(this.variables.get(id.toString()).stream,v);
+	            	updateFeed(id.appKey,id.feed,id.stream,v);
 	            	System.out.println("NewSampleListener.on_data_available: done!");
 	            	
 	            }
