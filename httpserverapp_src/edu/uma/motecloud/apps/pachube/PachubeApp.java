@@ -1,6 +1,6 @@
 package edu.uma.motecloud.apps.pachube;
 import edu.uma.motecloud.apps.common.VariableID;
-import MoteSample.SampleTopic;
+import MoteCloud.SampleTopic;
 import Pachube.Data; 
 import Pachube.Feed; 
 import Pachube.Pachube; 
@@ -16,7 +16,8 @@ public class PachubeApp {
 		// Register the module
 		Peer peer;
 		SampleTopic topicData;
-		//NewSampleListener nsl = new NewSampleListener(12777,1,"temperature:1");
+		int feedId = 13745;
+
 		try {
 			peer = new Peer("PachubeApp");
 			peer.joinGroup(new Group("MoteCloud"));
@@ -28,11 +29,11 @@ public class PachubeApp {
 //	    	serviceTopicQoS.setHistory(QoSParameters.KEEP_LAST_HISTORY_QOS, history);			
 			ReaderServiceTopic sampleTopicST = peer.newReaderServiceTopic(topicData, "SampleTopic", null);
 			System.out.println("PachubeApp: ServiceTopic done");
-			sampleTopicST.addListener(new NewSampleListener(12777,1,
+			sampleTopicST.addListener(new NewSampleListener(feedId,"6f29c0164d48d3874f08e77285bc20c83b05d1d6095a89a1fed3327eef84ab4a",
 					new VariableID[] {
-		               new VariableID("temperature:1",1,"",0,12777),
-		               new VariableID("humidity:1",1,"",1,12777),
-		               new VariableID("light:1",1,"",2,12777)
+		               new VariableID("temperature:2",2,"",0,feedId),
+		               new VariableID("humidity:2",2,"",1,feedId),
+		               new VariableID("light:2",2,"",2,feedId)
 		               }));
 			System.out.println("PachubeApp: Listeners added");
 		} catch (ImpossibleToCreateDDSDomainParticipant e) {
@@ -58,6 +59,7 @@ public class PachubeApp {
 		
 	}
 	
+	/** NOT USED, IT IS ONLY A CODE SAMPLE OF HOW TO CREATE A FEED FROM JAVA CODE **/
 	public static int createFeed() {
 		try {                     
 			//Creates a Pachube object authenicated using the provided API KEY
