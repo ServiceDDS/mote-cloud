@@ -1,6 +1,6 @@
 package edu.uma.motecloud.sink;
 
-import MoteSample.SampleTopic;
+import MoteCloud.SampleTopic;
 import ServiceDDS.Peer;
 import ServiceDDS.exception.ImpossibleToCreateDDSTopic;
 import ServiceDDS.servicetopic.WriterServiceTopic;
