@@ -1,7 +1,10 @@
-import ServiceDDS.Peer;
-import ServiceDDS.QoSParameters;
-import ServiceDDS.servicetopic.ServiceTopic;
-import ServiceDDS.servicetopic.WriterServiceTopic;
+import java.io.BufferedInputStream;
+import java.io.IOException;
+import java.util.ListIterator;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import samples.Sample;
 import data_structures.SampleSet;
 import data_structures.SampleStreamReader;
 import edu.uma.motecloud.sink.Module;
@@ -11,15 +14,6 @@ import gnu.io.NoSuchPortException;
 import gnu.io.PortInUseException;
 import gnu.io.SerialPort;
 import gnu.io.UnsupportedCommOperationException;
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.util.ListIterator;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
-import javax.swing.text.html.HTMLDocument.Iterator;
-
-import samples.Sample;
 
 /**
  * 
