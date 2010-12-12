@@ -17,6 +17,7 @@ public class PachubeApp {
 		Peer peer;
 		SampleTopic topicData;
 		int feedId = 13745;
+		String appKey = "6f29c0164d48d3874f08e77285bc20c83b05d1d6095a89a1fed3327eef84ab4a";
 
 		try {
 			peer = new Peer("PachubeApp");
@@ -29,11 +30,11 @@ public class PachubeApp {
 //	    	serviceTopicQoS.setHistory(QoSParameters.KEEP_LAST_HISTORY_QOS, history);			
 			ReaderServiceTopic sampleTopicST = peer.newReaderServiceTopic(topicData, "SampleTopic", null);
 			System.out.println("PachubeApp: ServiceTopic done");
-			sampleTopicST.addListener(new NewSampleListener(feedId,"6f29c0164d48d3874f08e77285bc20c83b05d1d6095a89a1fed3327eef84ab4a",
+			sampleTopicST.addListener(new NewSampleListener(
 					new VariableID[] {
-		               new VariableID("temperature:2",2,"",0,feedId),
-		               new VariableID("humidity:2",2,"",1,feedId),
-		               new VariableID("light:2",2,"",2,feedId)
+		               new VariableID("temperature:2",2,"",0,feedId,appKey),
+		               new VariableID("humidity:2",2,"",1,feedId,appKey),
+		               new VariableID("light:2",2,"",2,feedId,appKey)
 		               }));
 			System.out.println("PachubeApp: Listeners added");
 		} catch (ImpossibleToCreateDDSDomainParticipant e) {
