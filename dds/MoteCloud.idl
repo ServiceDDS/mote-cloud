@@ -1,0 +1,18 @@
+module MoteCloud {
+
+	struct SampleTopic {
+		long moteID;         // source of message
+		string wsnID;         // identifies the WSN
+		string location;      // id. the Internet point
+		long sample;		 // sample number
+		string variableName; // variable name
+		string data;         // sample value
+	}; #pragma keylist SampleTopic moteID wsnID location
+
+	struct EventTopic {
+		string name;         // name of the event
+		string location;      // id. the Internet point
+		long time;		 // time stamp
+	}; #pragma keylist EventTopic name location
+
+};

@@ -6,10 +6,10 @@ MD idlpp
 CD idlpp
 
 ECHO "Compiling IDL with SPLICE IDL compiler"
-idlpp -l java -S ../../MoteSample.idl
+idlpp -l java -S ../../MoteCloud.idl
 
 ECHO "Compiling generated java code"
-javac -classpath ".;%OSPL_HOME%/jar/dcpssaj.jar" -d .. MoteSample/*.java
+javac -classpath ".;%OSPL_HOME%/jar/dcpssaj.jar" -d .. MoteCloud/*.java
 IF NOT ERRORLEVEL==0 (
   ECHO:
   ECHO Compilation failed
