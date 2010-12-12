@@ -1,5 +1,5 @@
 package edu.uma.motecloud.apps.pachube;
-import edu.uma.motecloud.apps.common.VariableID;
+import edu.uma.motecloud.apps.common.VariableStream;
 import MoteCloud.SampleTopic;
 import Pachube.Data; 
 import Pachube.Feed; 
@@ -31,10 +31,10 @@ public class PachubeApp {
 			ReaderServiceTopic sampleTopicST = peer.newReaderServiceTopic(topicData, "SampleTopic", null);
 			System.out.println("PachubeApp: ServiceTopic done");
 			sampleTopicST.addListener(new NewSampleListener(
-					new VariableID[] {
-		               new VariableID("temperature:2",2,"",0,feedId,appKey),
-		               new VariableID("humidity:2",2,"",1,feedId,appKey),
-		               new VariableID("light:2",2,"",2,feedId,appKey)
+					new VariableStream[] {
+		               new VariableStream("temperature:2",2,"",0,feedId,appKey),
+		               new VariableStream("humidity:2",2,"",1,feedId,appKey),
+		               new VariableStream("light:2",2,"",2,feedId,appKey)
 		               }));
 			System.out.println("PachubeApp: Listeners added");
 		} catch (ImpossibleToCreateDDSDomainParticipant e) {
@@ -50,6 +50,9 @@ public class PachubeApp {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (ImpossibleToCreateDDSTopic e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (PachubeException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
