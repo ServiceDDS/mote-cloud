@@ -12,7 +12,7 @@ import ServiceDDS.exception.ImpossibleToCreateDDSTopic;
 import ServiceDDS.servicetopic.ReaderServiceTopic;
 
 public class PachubeApp {  
-	public static void main(String arsg[]) throws InterruptedException{
+	public static void main(String args[]) throws InterruptedException{
 		// Register the module
 		Peer peer;
 		SampleTopic topicData;
@@ -32,9 +32,9 @@ public class PachubeApp {
 			System.out.println("PachubeApp: ServiceTopic done");
 			sampleTopicST.addListener(new NewSampleListener(
 					new VariableStream[] {
-		               new VariableStream("temperature:2",2,"",0,feedId,appKey),
-		               new VariableStream("humidity:2",2,"",1,feedId,appKey),
-		               new VariableStream("light:2",2,"",2,feedId,appKey)
+		               new VariableStream("temperature:"+args[0],(new Integer(args[0])).intValue(),"",0,feedId,appKey),
+		               new VariableStream("humidity:"+args[0],(new Integer(args[0])).intValue(),"",1,feedId,appKey),
+		               new VariableStream("light:"+args[0],(new Integer(args[0])).intValue(),"",2,feedId,appKey)
 		               }));
 			System.out.println("PachubeApp: Listeners added");
 		} catch (ImpossibleToCreateDDSDomainParticipant e) {
