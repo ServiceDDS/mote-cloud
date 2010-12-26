@@ -66,14 +66,14 @@ public class EvolutionLineChartViewWeb extends EvolutionLineChartView
             con.login(user, password);
 //            System.out.println("WebChatter.start: connection LOGGED with " + con.getConnectionID());
 
-            MyJoinCommandIQ joinCommand = new MyJoinCommandIQ("HABITAT");
+            MyJoinCommandIQ joinCommand = new MyJoinCommandIQ("MoteCloud");
             joinCommand.setTo("serviceddsopenfire."+this.serverJID);
             joinCommand.setFrom(this.user+"@"+this.serverJID);
             System.out.println(joinCommand.toXML());
             con.sendPacket(joinCommand);
 
             MyNewCommandIQ newCommand = new MyNewCommandIQ(
-                                    "MoteSample.SampleTopic",
+                                    "MoteCloud.SampleTopic",
                                     "SampleTopic");
             newCommand.setTo("serviceddsopenfire."+this.serverJID);
             newCommand.setFrom(this.user+"@"+this.serverJID);
