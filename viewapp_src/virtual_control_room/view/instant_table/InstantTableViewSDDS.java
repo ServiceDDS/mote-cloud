@@ -11,7 +11,7 @@
 
 package virtual_control_room.view.instant_table;
 
-import MoteSample.SampleTopic;
+import MoteCloud.SampleTopic;
 import ServiceDDS.Peer;
 import ServiceDDS.QoSParameters;
 import ServiceDDS.exception.ImpossibleToCreateDDSTopic;

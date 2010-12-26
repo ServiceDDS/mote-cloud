@@ -5,7 +5,7 @@
 
 package virtual_control_room.view.vial;
 
-import MoteSample.SampleTopic;
+import MoteCloud.SampleTopic;
 import ServiceDDS.Peer;
 import ServiceDDS.QoSParameters;
 import ServiceDDS.exception.ImpossibleToCreateDDSTopic;
