@@ -63,6 +63,9 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
         jPanelMoteID = new javax.swing.JPanel();
         jLabelMoteID = new javax.swing.JLabel();
         jTextFieldMoteID = new javax.swing.JTextField();
+        jPanelServerJID = new javax.swing.JPanel();
+        jTextFieldServerJID = new javax.swing.JTextField();
+        jLabelServerJID = new javax.swing.JLabel();
         jPanelControl = new javax.swing.JPanel();
         jButtonConfirm = new javax.swing.JButton();
 
@@ -92,7 +95,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelPasswordLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelPassword)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 128, Short.MAX_VALUE)
                 .addComponent(jTextFieldPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -121,7 +124,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelUserLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelUser)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 164, Short.MAX_VALUE)
                 .addComponent(jTextFieldUser, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -135,7 +138,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jLabelServer.setText("Server");
+        jLabelServer.setText("Server URL");
 
         jTextFieldServer.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -150,7 +153,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelServerLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelServer)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addComponent(jTextFieldServer, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -180,7 +183,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelViewTypeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelViewType)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 127, Short.MAX_VALUE)
                 .addComponent(jComboBoxViewType, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -209,7 +212,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelVariableLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelVariable)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 97, Short.MAX_VALUE)
                 .addComponent(jTextFieldVariable, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -238,7 +241,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
             .addGroup(jPanelMoteIDLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabelMoteID)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 141, Short.MAX_VALUE)
                 .addComponent(jTextFieldMoteID, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -252,31 +255,32 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanelDataLayout = new javax.swing.GroupLayout(jPanelData);
-        jPanelData.setLayout(jPanelDataLayout);
-        jPanelDataLayout.setHorizontalGroup(
-            jPanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanelViewType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelVariable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelMoteID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelServer, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(jPanelPassword, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        jTextFieldServerJID.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jTextFieldServerJIDActionPerformed(evt);
+            }
+        });
+
+        jLabelServerJID.setText("ServerJID");
+
+        javax.swing.GroupLayout jPanelServerJIDLayout = new javax.swing.GroupLayout(jPanelServerJID);
+        jPanelServerJID.setLayout(jPanelServerJIDLayout);
+        jPanelServerJIDLayout.setHorizontalGroup(
+            jPanelServerJIDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelServerJIDLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabelServerJID)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 129, Short.MAX_VALUE)
+                .addComponent(jTextFieldServerJID, javax.swing.GroupLayout.PREFERRED_SIZE, 263, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
-        jPanelDataLayout.setVerticalGroup(
-            jPanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanelDataLayout.createSequentialGroup()
-                .addComponent(jPanelViewType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelVariable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelMoteID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelServer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        jPanelServerJIDLayout.setVerticalGroup(
+            jPanelServerJIDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelServerJIDLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanelServerJIDLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextFieldServerJID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabelServerJID))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -304,23 +308,55 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout jPanelDataLayout = new javax.swing.GroupLayout(jPanelData);
+        jPanelData.setLayout(jPanelDataLayout);
+        jPanelDataLayout.setHorizontalGroup(
+            jPanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanelViewType, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelVariable, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelMoteID, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelDataLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanelControl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addComponent(jPanelServer, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelServerJID, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelUser, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanelPassword, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        jPanelDataLayout.setVerticalGroup(
+            jPanelDataLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanelDataLayout.createSequentialGroup()
+                .addComponent(jPanelViewType, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelVariable, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelMoteID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelServer, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelServerJID, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanelUser, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanelPassword, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanelControl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanelData, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanelControl, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jPanelData, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanelData, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanelControl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -373,6 +409,10 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldPasswordActionPerformed
 
+    private void jTextFieldServerJIDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldServerJIDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldServerJIDActionPerformed
+
     /**
     * @param args the command line arguments
     */
@@ -390,6 +430,7 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelMoteID;
     private javax.swing.JLabel jLabelPassword;
     private javax.swing.JLabel jLabelServer;
+    private javax.swing.JLabel jLabelServerJID;
     private javax.swing.JLabel jLabelUser;
     private javax.swing.JLabel jLabelVariable;
     private javax.swing.JLabel jLabelViewType;
@@ -398,12 +439,14 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanelMoteID;
     private javax.swing.JPanel jPanelPassword;
     private javax.swing.JPanel jPanelServer;
+    private javax.swing.JPanel jPanelServerJID;
     private javax.swing.JPanel jPanelUser;
     private javax.swing.JPanel jPanelVariable;
     private javax.swing.JPanel jPanelViewType;
     private javax.swing.JTextField jTextFieldMoteID;
     private javax.swing.JTextField jTextFieldPassword;
     private javax.swing.JTextField jTextFieldServer;
+    private javax.swing.JTextField jTextFieldServerJID;
     private javax.swing.JTextField jTextFieldUser;
     private javax.swing.JTextField jTextFieldVariable;
     // End of variables declaration//GEN-END:variables
@@ -411,10 +454,12 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
     private void newEvolutionChart() {
         EvolutionLineChartViewWeb ev =
                 new virtual_control_room.view.evolutionline.EvolutionLineChartViewWeb(
+                    gui.conTable,
                     this.jTextFieldVariable.getText(),
                     new Integer(this.jTextFieldMoteID.getText()).intValue(),
                     true,
                     this.jTextFieldServer.getText(),
+                    this.jTextFieldServerJID.getText(),
                     this.jTextFieldUser.getText(),
                     this.jTextFieldPassword.getText()
                     );
@@ -428,8 +473,10 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
 
     private void newTable() {
         InstantTableViewWeb itv = new InstantTableViewWeb(
+                gui.conTable,
                 new Integer(this.jTextFieldMoteID.getText()).intValue(),
                 this.jTextFieldServer.getText(),
+                this.jTextFieldServerJID.getText(),
                 this.jTextFieldUser.getText(),
                 this.jTextFieldPassword.getText());
         JFrame newFrame = new JFrame();
@@ -444,11 +491,13 @@ public class NewWebViewJFrame extends javax.swing.JFrame {
     private void newVial() {
         VialViewWeb tv =
                 new virtual_control_room.view.vial.VialViewWeb(
+                    gui.conTable,
                     new Integer(this.jTextFieldMoteID.getText()).intValue(),
                     this.jTextFieldServer.getText(),
+                    this.jTextFieldServerJID.getText(),
                     this.jTextFieldUser.getText(),
                     this.jTextFieldPassword.getText(),
-                    "Temperature",
+                    this.jTextFieldVariable.getText(),
                     100,100,20.0);
         ViewJFrame newFrame = new ViewJFrame();
         newFrame.setTitle(this.jTextFieldVariable.getText()+" Web Thermometer");

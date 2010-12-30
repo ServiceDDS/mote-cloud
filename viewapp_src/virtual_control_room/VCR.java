@@ -10,7 +10,7 @@ import ServiceDDS.Peer;
 import ServiceDDS.exception.ImpossibleToCreateDDSDomainParticipant;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import virtual_control_room.exceptions.VCRExceptionUnnableToConnectToHabitatLAN;
+import virtual_control_room.exceptions.VCRExceptionUnnableToConnectToDDS;
 
 /**
  *
@@ -49,7 +49,7 @@ public class VCR {
 //        this.serialMonitor.command(string);
     }
 
-    public void connectToHabitat() throws VCRExceptionUnnableToConnectToHabitatLAN {
+    public void connectToDDS() throws VCRExceptionUnnableToConnectToDDS {
         // OJO: TENEMOS QUE COMPLETAR TEMA EXCEPTIONS!!!
         this.connectedToHabitat = true;
         try {
