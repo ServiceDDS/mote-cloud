@@ -13,9 +13,11 @@ package virtual_control_room;
 
 import ServiceDDS.Peer;
 import ServiceDDS.service.RemoteServiceInstance;
+import java.util.Hashtable;
 import java.util.LinkedList;
 import java.util.List;
 import javax.swing.JTabbedPane;
+import org.jivesoftware.smack.XMPPConnection;
 import virtual_control_room.view.View;
 import virtual_control_room.view.evolutionline.EvolutionLineChartView;
 import virtual_control_room.view.instant_table.InstantTableView;
@@ -48,6 +50,7 @@ public class GUI extends javax.swing.JFrame {
     RemoteServiceInstance serialOutputService;
 
     ParticipantMotesJFrame participants = new ParticipantMotesJFrame();
+    Hashtable<String, XMPPConnection> conTable = new Hashtable<String,XMPPConnection>();
 
     /** Creates new form GUI */
     public GUI() {
@@ -145,7 +148,7 @@ public class GUI extends javax.swing.JFrame {
 
         jMenu1.setText("Connect");
 
-        jMenuItem2.setText("Connect to Habitat (LAN)");
+        jMenuItem2.setText("Connect to MoteCloud (LAN)");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem2ActionPerformed(evt);
@@ -192,7 +195,7 @@ public class GUI extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         try {
-            vcr.connectToHabitat();
+            vcr.connectToDDS();
             this.jMenuItemNewView.setEnabled(true);
             this.jMenuItemParticipantsView.setEnabled(true);
         } catch (Exception e) {
