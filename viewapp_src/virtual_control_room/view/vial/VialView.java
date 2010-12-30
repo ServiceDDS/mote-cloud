@@ -82,6 +82,7 @@ public class VialView extends JPanel implements
     }
 
     public void showSample(Sample s) {
+//      System.out.println("VialView.showSample(): showing sample for "+s.key);
         dataset.setValue(((Double)s.getValue()).doubleValue());
     }
 
