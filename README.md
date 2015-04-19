@@ -52,4 +52,10 @@ the Sink API (it has three operations) to put data in the DDS global data space.
 with the XMPP standard protocol. Therefore, extensibility points are well defined, and are mostly based on standard 
 technologies.  
 
+## Publications  
+
+MoteCloud is based on the ServiceDDS research project.  
+
+- Dianes, J.A.; Díaz, M.; Rubio, B, ."*Using standards to integrate soft real-time components into dynamic distributed architectures"* Computer Standards and Interfaces. Elsevier. [Available online 15 October 2011](doi:10.1016/j.csi.2011.10.002)  
+- Dianes, J.A.; Díaz, M.; Rubio, B.,*"ServiceDDS: A Framework for Real-Time P2P Systems Integration,*" Object/Component/Service-Oriented Real-Time Distributed Computing (ISORC), 2010 13th IEEE International Symposium on , vol., no., pp.233,237, 5-6 May 2010. [Available onlie](doi: 10.1109/ISORC.2010.37)  
 
