@@ -6,6 +6,7 @@ science. The cloud computing concept is being used to define an Internet-based c
 software, and information are provided to computers and other devices on demand. This can be applied to ambient 
 monitoring with wireless sensor networks.  
 
+[](https://github.com/jadianes/mote-cloud/blob/master/resources/body_pic.png?raw=true)
 However, the degree of heterogeneity and scalability, together with the quality of service and event-based style of 
 interaction typical of these scenarios, requires of specific supporting technologies if we want to provide an 
 effective and competitive solution.  
