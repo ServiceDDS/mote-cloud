@@ -52,6 +52,10 @@ the Sink API (it has three operations) to put data in the DDS global data space.
 with the XMPP standard protocol. Therefore, extensibility points are well defined, and are mostly based on standard 
 technologies.  
 
+## IMPORTANT
+
+This is a research project. It is not intended for production. Moreover, some of its parts are not functional yet. However, there are some components and ideas here that worth to be shared among the DDS and RTSJ community.  
+
 ## Publications  
 
 MoteCloud is based on the ServiceDDS research project.  
